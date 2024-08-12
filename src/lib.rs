@@ -83,7 +83,7 @@ pub fn shape(
 fn create_glyphs_from_string(input_str: &str) -> Vec<Glyph> {
     input_str
         .chars()
-        .filter(|&c| c != '\n') // Удаляем символы новой строки
+        .filter(|&c| c != '\n')
         .enumerate()
         .map(|(ix, c)| Glyph {
             codepoint: c as u32,
